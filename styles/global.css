@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    flex-direction: column;
+    gap: 1vw;
+
+}
+
+.main .panel{
+    box-shadow: 0 0 10px white;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    z-index: 88444114444;
+    background: url('https://th.bing.com/th/id/OIP.fIOv5JFfxyVklBqzL_HjfQHaEK?pid=ImgDet&rs=1');
+    background-size: cover;
+    
+    border-radius: 10px;
+    overflow: hidden;
+    
+
+}
+
+.main .panel .videoplay{
+    height: 70%;
+    width: 80%;
+    overflow: hidden;
+}
+
+
+
+.btn{
+    border: 1px solid aqua;
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+    padding: 10px 15px ;
+    font-size: 1.5vw;
+    transition: all 0.5s linear;
+    border-radius: 5px;
+
+}
+
+.btn:hover{
+    letter-spacing: 1px;
+    color: black;
+    border-color: aqua;
+    background-color: aqua;
+    box-shadow: 0 0 20px aqua;
+    transform: scale(1.15);
+}
+
+#heading-text{
+    color: transparent;
+    -webkit-text-stroke: 1px aqua;
+    text-shadow: 1px 1px 5px aqua;
+
+}
+
+.videoplay {
+    border: 1px solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    border-radius: 10px;
+    width:fit-content;
+
+}
+
+.videoplay video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+
+}
+
+.animation{
+    animation: anim1 3s linear;
+}
+
+@keyframes anim1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#videoplay{
+    opacity: 1;
+    animation: anim2 1s linear;
+}
+@keyframes anim2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
